@@ -14,7 +14,8 @@ Takes the graphics buffer, which is a single dimension array consisting 2048
 pixels with the value of 1 or 0.  Resolution is 64 x 32.
 
 ### getKey
-Should return -1 when no key is pressed, if a key is pressed return a
+Chip-8 used a hex based keyboard, so possible keys have the values 0x0 - 0xF.
+getKey should return -1 when no key is pressed, if a key is pressed return a
 value 0x0 - 0xF (0 - 15)
 
 
